@@ -1,16 +1,21 @@
 ---
 permalink: /
-title: "About"
+title: "About me"
 author_profile: true
 ---
 
-## Senior QA Automation Engineer | SDET | AI Quality Engineering
+I’m Mercy, a quality engineering professional with more than 9 years of experience across software quality assurance, test automation, and banking and financial-services systems. I design risk-based test strategies and scalable automation, and help teams deliver reliable software through release readiness and production verification.
 
-I am a quality engineering professional with more than 9 years of experience across software quality assurance, test automation, and banking and financial-services systems. I design risk-based test strategies and scalable automation, and support teams through release readiness and production verification.
+I work with Python, Playwright, Selenium, Appium, Robot Framework, API testing, CI/CD, and performance testing. I’m currently pursuing a Master of Data Science and extending my quality engineering practice into AI/ML quality, data validation, robustness, and responsible AI testing.
 
-My hands-on experience includes Python, Playwright, Selenium, Appium, Robot Framework, API testing, CI/CD, and performance testing. I am currently pursuing a Master of Data Science and extending my quality engineering practice into AI/ML quality, data validation, robustness, and responsible AI testing.
+## Areas of focus
 
-### Selected experience
+- Quality engineering and test automation
+- Banking, financial services, and payment systems
+- AI/ML quality, data validation, and responsible AI testing
+- API, mobile, and performance testing
+
+## Selected experience
 
 - Led user acceptance testing for an enterprise Microsoft 365 Data Loss Prevention solution, with zero open critical defects at rollout.
 - Supported banking and card-payment platforms serving more than one million cardholders.

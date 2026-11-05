@@ -23,7 +23,7 @@ repository               : "mercygathoni/mercygathoni.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :
+  avatar           : "Passport Photo.jpg" # filename of avatar image placed in /images/ for author profile
   name             : "Mercy Gathoni Kihuna"
   pronouns         : # example: "she/her"  
   bio              : "Senior QA Automation Engineer | SDET | AI Quality Engineering"
