@@ -74,22 +74,52 @@
       font-size: 0.95rem;
     }
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1.25rem;
-      padding: 1rem 0;
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1;
       border-bottom: 1px solid var(--line);
-      font-size: 0.9rem;
+      background: var(--paper);
     }
 
-    nav a {
-      font-weight: 600;
+    .site-nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1080px;
+      min-height: 64px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-nav a {
+      flex: 0 0 auto;
+      color: var(--muted);
       text-decoration: none;
     }
 
-    nav a:hover {
+    .site-nav a:hover,
+    .site-nav a:focus-visible {
+      color: var(--ink);
       text-decoration: underline;
+    }
+
+    .site-nav .site-name {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .site-nav__links {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 4vw, 2.5rem);
+      overflow-x: auto;
+      font-size: 0.95rem;
+    }
+
+    .coming-soon {
+      color: var(--muted);
     }
 
     section {
@@ -160,6 +190,15 @@
     }
 
     @media (max-width: 600px) {
+      .site-nav__inner {
+        gap: 1.25rem;
+        padding: 0 1rem;
+      }
+
+      .site-nav__links {
+        gap: 1.25rem;
+      }
+
       .page {
         width: 100%;
         margin: 0;
@@ -180,7 +219,7 @@
         box-shadow: none;
       }
 
-      nav {
+      .site-nav {
         display: none;
       }
 
@@ -197,7 +236,19 @@
   </style>
 </head>
 <body>
-  <main class="page">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a class="site-name" href="#top">Mercy Gathoni Kihuna</a>
+      <div class="site-nav__links">
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#blog-posts">Blog Posts</a>
+        <a href="#cv">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page" id="top">
     <header>
       <h1>Mercy Gathoni Kihuna</h1>
       <p class="headline">Senior QA Automation Engineer | SDET | AI Quality Engineering</p>
@@ -208,15 +259,22 @@
       </p>
     </header>
 
-    <nav aria-label="CV sections">
-      <a href="#profile">Profile</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#education">Education</a>
-    </nav>
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="coming-soon">Content coming soon.</p>
+    </section>
 
-    <section id="profile">
+    <section id="talks">
+      <h2>Talks</h2>
+      <p class="coming-soon">Content coming soon.</p>
+    </section>
+
+    <section id="blog-posts">
+      <h2>Blog posts</h2>
+      <p class="coming-soon">Content coming soon.</p>
+    </section>
+
+    <section id="cv">
       <h2>Profile summary</h2>
       <p>Senior QA Automation Engineer and SDET with 9+ years of experience in software quality assurance and quality engineering, including banking and financial-services systems. Experienced in designing scalable test automation frameworks and delivering UI, API, integration, end-to-end, regression, performance, security-related and data validation testing.</p>
       <p>Skilled in risk-based test strategies, translating requirements into test scenarios and data, integrating automated suites into CI/CD pipelines, defect management, and pre- and post-production quality assurance. Hands-on with Python, Playwright, Selenium, Appium, Robot Framework, Katalon, JMeter, Gatling, Jenkins and GitHub Actions across distributed systems, microservices, cloud platforms and data-intensive applications. Currently pursuing a Master of Data Science, with a focus on applying quality-engineering practices to AI/ML quality, model and data validation, output quality, robustness and responsible AI testing.</p>
